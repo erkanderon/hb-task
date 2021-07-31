@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: hbtask
+  name: hbtask
+  namespace: default
+spec:
+  containers:
+  - image: erkanderon/hbtask:1.0.1
+    name: hbtask
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
